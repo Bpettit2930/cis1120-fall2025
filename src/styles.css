@@ -58,3 +58,27 @@
   color: #374151;
   font-size: 0.95rem;
 }
+
+/* Simple navigation styles */
+.site-nav {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  background: #fafafa;
+}
+
+.site-nav__list {
+  margin: 0;
+  padding: 10px 14px;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.site-nav__item a {
+  text-decoration: none;
+  color: #111827;
+}
+
+.site-nav__item a:hover,
+.site-nav__item a:focus-visible {
+  text-decoration: underline;
+}
