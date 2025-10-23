@@ -2,3 +2,59 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+/* NonprofitCard styles */
+.nonprofit-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-decoration: none;
+  background: #fff;
+  color: inherit;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease, transform 0.05s ease, border-color 0.2s ease;
+}
+
+.nonprofit-card:hover,
+.nonprofit-card:focus-visible {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  border-color: rgba(0,0,0,0.18);
+}
+
+.nonprofit-card:active {
+  transform: translateY(1px);
+}
+
+.nonprofit-card__logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.nonprofit-card__content {
+  display: grid;
+  gap: 4px;
+}
+
+.nonprofit-card__title {
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nonprofit-card__external {
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+
+.nonprofit-card__desc {
+  margin: 0;
+  color: #374151;
+  font-size: 0.95rem;
+}

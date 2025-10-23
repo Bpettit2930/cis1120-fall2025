@@ -1,36 +1,122 @@
 import ResumeItem from "../components/ResumeItem";
+import NonprofitCard from "../components/NonprofitCard";
 
 export default function Resume() {
   return (
     <>
-      Alvaro Montoro Senior Software Engineer with strong experience creating
-      high-quality, scalable, and high-performance web applications seeking
-      front-end and full stack opportunities. EXPERIENCE FILTERS athenahealth
-      Healthcare IT Member of Technical Staff 2017 - 2019 Developed widgets
-      using React and Less to display patient information. Created design
-      specifications, participated in design and code reviews. Worked on the
-      design and initial development of a new platform to import medical
-      documents. Developed a Kotlin micro-service to generate XML documents
-      based on a government-compliant architecture (CCDA). General Motors
-      Cadillac.Com Team Web Developer 2015 - 2017 Developed new components for
-      the award-winning website Cadillac.com and its mobile version. Worked with
-      stakeholders to refine and negotiate product requirement specifications,
-      functional specifications, and product vision and direction. Designed a
-      web component that reduced page load speed by over 15%, improving SEO and
-      accessibility, and saving authoring expenses. Organized and participated
-      in events representing GM at volunteering opportunities and competitions.
-      MicroAssist Information Technology and Services PHP Developer 2014 - 2015
-      Designed and developed different web projects with a focus on
-      accessibility, including new features and website enhancements. Created
-      and integrated an automated mail system with 3rd party APIs. Developed and
-      collaborated in the translation project of the ITTD website for the Texas
-      Department of Public Safety. Hewlett-Packard Content & Digital Asset
-      Management IT Engineer 2011 - 2014 Developed two internal content
-      management systems (related to HP’s products documentation) with over
-      three million monthly visitors. Coordinated efforts with an overseas team,
-      applying Agile methodologies to ensure on-time, on-spec project delivery.
-      Improved different batch jobs performance, reducing execution time by over
-      50%, and eliminating downtime.
+      <NonprofitCard
+        name="Fundación de Esperanza"
+        description="Explore the mission, programs, and community impact."
+        href="https://www.fundaciondeesperanza.org/about"
+      />
+      <header>
+        <h1>Alvaro Montoro</h1>
+        <p>
+          Senior Software Engineer with strong experience creating high-quality,
+          scalable, and high-performance web applications seeking front-end and
+          full stack opportunities.
+        </p>
+      </header>
+
+      <h2>Experience</h2>
+
+      <ResumeItem
+        name="athenahealth"
+        dept="Healthcare IT"
+        position="Member of Technical Staff"
+        startDate="2017"
+        endDate="2019"
+      >
+        <ul>
+          <li>
+            Developed widgets using React and Less to display patient
+            information.
+          </li>
+          <li>
+            Created design specifications; participated in design and code
+            reviews.
+          </li>
+          <li>
+            Worked on design and initial development of a new platform to import
+            medical documents.
+          </li>
+          <li>
+            Built a Kotlin microservice to generate XML documents based on a
+            government-compliant architecture (CCDA).
+          </li>
+        </ul>
+      </ResumeItem>
+
+      <ResumeItem
+        name="General Motors"
+        dept="Cadillac.com Team"
+        position="Web Developer"
+        startDate="2015"
+        endDate="2017"
+      >
+        <ul>
+          <li>
+            Developed new components for the award-winning website Cadillac.com
+            and its mobile version.
+          </li>
+          <li>
+            Collaborated with stakeholders to refine and negotiate product and
+            functional specifications, product vision, and direction.
+          </li>
+          <li>
+            Designed a web component that reduced page load speed by over 15%,
+            improving SEO and accessibility while reducing authoring costs.
+          </li>
+          <li>
+            Represented GM at volunteering events and competitions.
+          </li>
+        </ul>
+      </ResumeItem>
+
+      <ResumeItem
+        name="MicroAssist"
+        dept="Information Technology and Services"
+        position="PHP Developer"
+        startDate="2014"
+        endDate="2015"
+      >
+        <ul>
+          <li>
+            Designed and developed accessibility-focused web projects, adding
+            new features and enhancements.
+          </li>
+          <li>
+            Created and integrated an automated mail system with 3rd-party APIs.
+          </li>
+          <li>
+            Contributed to the translation project of the ITTD website for the
+            Texas Department of Public Safety.
+          </li>
+        </ul>
+      </ResumeItem>
+
+      <ResumeItem
+        name="Hewlett-Packard"
+        dept="Content & Digital Asset Management"
+        position="IT Engineer"
+        startDate="2011"
+        endDate="2014"
+      >
+        <ul>
+          <li>
+            Developed two internal content management systems for HP product
+            documentation serving over three million monthly visitors.
+          </li>
+          <li>
+            Coordinated with an overseas team, applying Agile methodologies to
+            ensure on-time, on-spec delivery.
+          </li>
+          <li>
+            Improved performance of multiple batch jobs, reducing execution time
+            by over 50% and eliminating downtime.
+          </li>
+        </ul>
+      </ResumeItem>
     </>
   );
 }
